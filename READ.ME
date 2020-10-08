@@ -1,0 +1,73 @@
+Working with the Uno, 
+I required to add in a Mosfet,
+and ran out of connections, so I decided to produce an Uno 
+connectivity extension board.
+
+I've included pads for 4 SMD Optos, with their own, 
+isolated Gnd
+
+4 Mosfets with their own VCC
+3 Buttons with Pull down resistor pads
+2 ADC Pots
+
+through hole pads for extra maLe/female headers.
+I've wired in an SD card to the top header.
+
+I've tried to accomodate the Arduino multifunction shield,
+which I hope can still be fitted on to the Arduino.
+This shield will then give access to three more buttons,
+a buzzer, 4 x 7 seg display.
+
+the multifunction shield itself accomodates a bluetooth module
+or a voice module.
+There are plenty of headers spaces left to accomodate more modules, 
+and the PCB could be easily modded to accomodate
+other or more modules.
+
+I've tried to include pull down resistor and biasing pads where possible 
+and to keep pin out conflicts to a nminimum.
+
+The following pins are allocated as
+
+A1 - A2 are used by the Multifunction shield as buttons,
+obviously, if you're not using that shield, these are then free.
+
+A4 & A5 have connections to pads for trimmer Pots, connected to VCC & Gnd.
+
+ The Mosfet pads have connections to Gnd via pull down pads
+ and their own VCC supply rg for a 12V 
+mosfet supply.
+
+Their inputs have pull down pads to Gnd.
+The Mosfets are connected to Digital Pins 2,3,4,5 which have pullups internal to the Arduino.
+
+Pins 8 and 9 are connected to pads for Buttons with Gnd connections so pins
+8 and nine can be pulled low via these buttons.
+There are pads  for a thiord button not in circuit yet.
+
+In addition there is a large central area which is set aside as a Vero board type area
+for ad hoc experimentation, development work.
+I'll  try make this the same size as one onf the smaller breadboards so
+one of these can be used for development work.
+
+
+Version 1 is a first build so it's likely that it may contain errors,
+
+I'll update this document as these errors are rectified
+
+If you plan on using this board, please read to the end of the document 
+as there may well be important upgrades to take account of.
+
+********************************************
+Version 1.0
+Gerberfile = UnoExtend3.zip
+image saved as a PDF image.
+
+First Build
+********************************************
+
+
+
+
+
+
